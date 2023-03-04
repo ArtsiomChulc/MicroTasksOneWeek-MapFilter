@@ -22,6 +22,7 @@ export const Header = (props: HeaderType) => {
 
 				</>
 			)
-		})}</div>
+		})}
+		</div>
 	)
 }

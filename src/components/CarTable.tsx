@@ -21,15 +21,12 @@ export const CarTable = (props: CarTableType) => {
 
 				{props.carsItem.map((car, i) => {
 					return (
-						<tr>
+						<tr key={i}>
 							<td>{i + 1} - {car.manufacturer}</td>
 							<td>{car.model}</td>
 						</tr>
 					)
 				})}
-
-
-
 			</table>
 		</>
 	)

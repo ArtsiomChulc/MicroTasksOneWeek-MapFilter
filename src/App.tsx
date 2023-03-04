@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Body } from './components/Body';
+import { CurrentNumber } from './components/CurrentNumber';
+import { CurrentMoney } from './components/CurrentMoney';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 
@@ -36,6 +38,8 @@ function App() {
     <div className="App">
       <Header text={headerText} />
       <Body titleForBody={'I am eBody'} studentsBody={students} />
+      <CurrentNumber />
+      <CurrentMoney />
       <Footer itemForFooter={1234567890} />
     </div>
   );
